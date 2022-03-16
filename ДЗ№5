@@ -24,15 +24,15 @@ with open('task2.txt') as f:
     
 rows_count, words_count = len(rows), sum([len(word_list) for word_list in expanded_rows])
 print(f"Всего строк - {rows_count}, всего слов - {words_count}")
-
-3. Создать текстовый файл (не программно), построчно записать
-фамилии сотрудников и величину их окладов.
 Определить, кто из сотрудников имеет оклад менее 20 тыс.,
 вывести фамилии этих сотрудников. Выполнить подсчет средней
 величины дохода сотрудников.
 
 with open("task3.txt") as f:
     worker_list = [worker_line.split() for worker_line in f.readlines()]
+
+3. Создать текстовый файл (не программно), построчно записать
+фамилии сотрудников и величину их окладов.
     
 workers_with_info = [
     {"name": worker[0], "salary": float(worker[1])}
