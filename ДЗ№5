@@ -174,3 +174,4 @@ with open('task7.txt') as input_data:
 
 with open('task7.json', 'w') as output_data:
     json.dump(companies_data, output_data)
+    
